@@ -1,5 +1,10 @@
 ---
 title: "speed-and-distance"
+knit: (function(input_file, encoding) {
+    out_dir <- 'docs';
+    rmarkdown::render(input_file,
+      encoding=encoding,
+      output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 author: "Johnson ODEJIDE"
 date: "2022-10-26"
 output: html_document
